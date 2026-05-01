@@ -8,16 +8,15 @@
 public class Menu
 {
     // instance variables - replace the example below with your own
-    private int x;
     private Catalog catalog;
     private Subscription subscription;
+    private String websiteName;
     /**
      * Constructor for objects of class Menu
      */
     public Menu()
     {
         // initialise instance variables
-        x = 0;
     }
 
     /**
@@ -26,9 +25,10 @@ public class Menu
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int sampleMethod(int y)
+    public void printWebsiteName()
     {
         // put your code here
-        return x + y;
+        System.out.println("Game Library");
     }
+    
 }

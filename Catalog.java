@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Write a description of class Catalog here.
  *
@@ -8,15 +8,15 @@
 public class Catalog
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private ArrayList<String> games;
     private Game game;
+    private String searchEngine;
     /**
      * Constructor for objects of class Catalog
      */
     public Catalog()
     {
         // initialise instance variables
-        x = 0;
     }
 
     /**
@@ -25,9 +25,17 @@ public class Catalog
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int sampleMethod(int y)
+    public void printListOfGames()
     {
         // put your code here
-        return x + y;
+        for ( String game : games)
+        {
+            System.out.println();
+        }
+    }
+    
+    public void printGameSearched()
+    {
+        
     }
 }
