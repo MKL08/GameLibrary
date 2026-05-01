@@ -8,7 +8,8 @@
 public class Game
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private String gameName;
+    private String gameCreator;
 
     /**
      * Constructor for objects of class Game
@@ -16,7 +17,6 @@ public class Game
     public Game()
     {
         // initialise instance variables
-        x = 0;
     }
 
     /**
@@ -25,9 +25,19 @@ public class Game
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int sampleMethod(int y)
+    public void printGameName()
     {
         // put your code here
-        return x + y;
+        System.out.println();
+    }
+    
+    public void printGameCreator()
+    {
+        System.out.println();
+    }
+    
+    public void printGameAgeRating()
+    {
+        
     }
 }
