@@ -17,6 +17,7 @@ public class Subscription
     public Subscription()
     {
         // initialise instance variables
+        accounts = new HashSet<String>();
     }
     
     public void addAccount()

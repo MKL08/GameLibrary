@@ -17,6 +17,7 @@ public class Catalog
     public Catalog()
     {
         // initialise instance variables
+        games = new ArrayList<String>();
     }
 
     /**
