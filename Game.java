@@ -17,6 +17,8 @@ public class Game
     public Game()
     {
         // initialise instance variables
+        gameName = new String();
+        gameCreator = new String();
     }
 
     /**

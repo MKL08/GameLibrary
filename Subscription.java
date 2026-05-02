@@ -17,7 +17,7 @@ public class Subscription
     public Subscription()
     {
         // initialise instance variables
-        accounts = new HashMap<String, String>();
+        accounts = new HashMap<>();
         accountName = new String();
         accountPassword = new String();
     }
@@ -27,9 +27,9 @@ public class Subscription
        accounts.put(accountName, accountPassword); 
     }
 
-    public void removeAccount()
+    public void removeAccount(String accountName, String accountPassword)
     {
-        
+        accounts.remove(accountName, accountPassword);
     }
     
     public void logIn(String accountName, String accountPassword)

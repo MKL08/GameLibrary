@@ -17,6 +17,9 @@ public class Menu
     public Menu()
     {
         // initialise instance variables
+        catalog = new Catalog();
+        subscription = new Subscription();
+        websiteName = new String();
     }
 
     /**

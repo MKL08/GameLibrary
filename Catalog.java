@@ -18,6 +18,8 @@ public class Catalog
     {
         // initialise instance variables
         games = new ArrayList<String>();
+        game = new Game();
+        searchEngine = new String();
     }
 
     /**
