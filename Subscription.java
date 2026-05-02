@@ -1,4 +1,4 @@
-import java.util.HashSet;
+import java.util.HashMap;
 /**
  * Write a description of class Subscription here.
  *
@@ -8,7 +8,7 @@ import java.util.HashSet;
 public class Subscription
 {
     // instance variables - replace the example below with your own
-    private HashSet<String> accounts;
+    private HashMap<String, String> accounts;
     private String accountName;
     private String accountPassword;
     /**
@@ -17,12 +17,14 @@ public class Subscription
     public Subscription()
     {
         // initialise instance variables
-        accounts = new HashSet<String>();
+        accounts = new HashMap<String, String>();
+        accountName = new String();
+        accountPassword = new String();
     }
     
-    public void addAccount()
+    public void addAccount(String accountName, String accountPassword)
     {
-        
+       accounts.put(accountName, accountPassword); 
     }
 
     public void removeAccount()
@@ -32,13 +34,14 @@ public class Subscription
     
     public void logIn(String accountName, String accountPassword)
     {
-        
+        System.out.println("Wrong username or password. Please try again.");
     }
     
     public void logOut()
     {
-        
+        System.out.println("You have logged out.");
     }
+    
     /**
      * An example of a method - replace this comment with your own
      *
