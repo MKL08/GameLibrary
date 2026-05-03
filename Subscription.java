@@ -35,6 +35,7 @@ public class Subscription
 
     public void logIn(String accountName, String accountPassword)
     {
+        // if (login successful) { System.out.println ("Login Successfull."); } else { code below }
         System.out.println("Wrong username or password. Please try again.");
     }
 
