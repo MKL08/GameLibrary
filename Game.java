@@ -27,13 +27,13 @@ public class Game
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public void printGameName()
+    public void printGameName(String gameName)
     {
         // put your code here
         System.out.println();
     }
     
-    public void printGameCreator()
+    public void printGameCreator(String gameCreator)
     {
         System.out.println();
     }

@@ -22,6 +22,16 @@ public class Catalog
         searchEngine = new String();
     }
 
+    public void addGame(String gameName)
+    {
+        games.add(gameName);
+    }
+    
+    public void removeGame(String gameName)
+    {
+        games.remove(gameName);
+    }
+    
     /**
      * An example of a method - replace this comment with your own
      *

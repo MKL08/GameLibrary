@@ -49,17 +49,13 @@ public class Subscription
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public void printAccountInformation()
-    {
-        // put your code here
-        System.out.println();
-    }
 
     public void listAllAccounts()
     {
         for (Map.Entry<String, String> entry : accounts.entrySet())
         {
-            System.out.println("Account name : " + entry.getKey() + " Account Password : " + entry.getValue());
+            System.out.println("Account name : " + entry.getKey());
+            System.out.println("Account Password : " + entry.getValue());
         }
     }
 }
