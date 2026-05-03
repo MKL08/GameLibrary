@@ -26,12 +26,12 @@ public class Catalog
     {
         games.add(gameName);
     }
-    
+
     public void removeGame(String gameName)
     {
         games.remove(gameName);
     }
-    
+
     /**
      * An example of a method - replace this comment with your own
      *
@@ -43,12 +43,17 @@ public class Catalog
         // put your code here
         for ( String game : games)
         {
-            System.out.println();
+            System.out.println(game);
         }
     }
-    
-    public void printGameSearched()
+
+    public void printGameSearched(String input)
     {
-        
+        if (games.contains(input))
+        {
+            System.out.println(game);
+        } else {
+            System.out.println("Sorry, the game you're trying to find is not available in our library.");
+        }
     }
 }
