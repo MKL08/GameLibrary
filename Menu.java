@@ -34,4 +34,8 @@ public class Menu
         System.out.println("Game Library");
     }
     
+    public void getCatalog()
+    {
+        
+    }
 }
