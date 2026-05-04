@@ -15,7 +15,7 @@ public class SinglePlayer extends Game
      */
     public SinglePlayer()
     {
-        // initialise instance variables
+     gameDescription = new String();
     }
 
     /**

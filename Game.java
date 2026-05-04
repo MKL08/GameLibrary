@@ -10,7 +10,6 @@ public class Game
     // instance variables - replace the example below with your own
     private String gameName;
     private String gameCreator;
-
     /**
      * Constructor for objects of class Game
      */
@@ -35,11 +34,11 @@ public class Game
     
     public void printGameCreator(String gameCreator)
     {
-        System.out.println();
+        System.out.println("The creator(s) of the game is :" + gameCreator);
     }
     
     public void printGameAgeRating()
     {
-        
+      //System.out.println(print the enum age rating)
     }
 }

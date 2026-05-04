@@ -7,5 +7,8 @@
  */
 public enum AgeRating
 {
-    EVERYONE, TEEN, MATURE, ADULTS_ONLY
+    EVERYONE, 
+    TEEN,
+    MATURE,
+    ADULTS_ONLY
 }

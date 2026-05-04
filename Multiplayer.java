@@ -15,7 +15,7 @@ public class Multiplayer extends Game
      */
     public Multiplayer()
     {
-        // initialise instance variables
+        gameDescription = new String();
     }
 
     /**

@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.*;
 /**
  * Write a description of class Subscription here.
  *
@@ -35,7 +36,15 @@ public class Subscription
 
     public void logIn(String accountName, String accountPassword)
     {
-        System.out.println("Wrong username or password. Please try again.");
+        if (accounts.equals(accountName)&& accounts.equals(accountPassword))
+        {
+            System.out.println("Welcomback" + accountName + "!");
+        }
+        else
+        {
+            System.out.println("Incorrect username or password. Please try again.");
+        }
+
     }
 
     public void logOut()
