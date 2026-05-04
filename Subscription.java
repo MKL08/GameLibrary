@@ -36,6 +36,7 @@ public class Subscription
 
     public void logIn(String accountName, String accountPassword)
     {
+<<<<<<< HEAD
         if (accounts.equals(accountName)&& accounts.equals(accountPassword))
         {
             System.out.println("Welcomback" + accountName + "!");
@@ -45,6 +46,8 @@ public class Subscription
             System.out.println("Incorrect username or password. Please try again.");
         }
 
+=======
+>>>>>>> ab12894adc7f2355479efb154a13ff80923001ab
         // if (login successful) { System.out.println ("Login Successfull."); } else { code below }
         System.out.println("Wrong username or password. Please try again.");
 

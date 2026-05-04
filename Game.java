@@ -39,6 +39,6 @@ public class Game
     
     public void printGameAgeRating()
     {
-      //System.out.println(print the enum age rating)
+      System.out.println();
     }
 }
