@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.*;
+import java.lang.*;
 /**
  * Write a description of class Subscription here.
  *
@@ -34,22 +35,26 @@ public class Subscription
         accounts.remove(accountName, accountPassword);
     }
 
-    public void logIn(String accountName, String accountPassword)
+    public boolean logIn(String accountName, String accountPassword)
     {
         if (accounts.containsKey(accountName)&& accounts.get(accountName).equals(accountPassword))
         {
             System.out.println("Welcome back " + accountName + "!");
+            return true;
         }
         else
         {
             System.out.println("Incorrect username or password. Please try again.");
+            return false;
         }
     }
-
+    
     public void logOut(String accountName, String accountPassword)
     {
         System.out.println("You have logged out.");
+        //If statement for if logIn == true then the above statement, else prints : You do not have an account to login.
     }
+
 
     /**
      * An example of a method - replace this comment with your own

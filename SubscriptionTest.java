@@ -43,4 +43,11 @@ public class SubscriptionTest
         subscrip2.logIn("Water", "Bottle");
         subscrip2.logOut("Water", "Bottle");
     }
+
+    @Test
+    public void logOutTest()
+    {
+        Subscription subscrip1 = new Subscription();
+    }
 }
+
