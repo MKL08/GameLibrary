@@ -46,7 +46,7 @@ public class Subscription
         }
     }
 
-    public void logOut()
+    public void logOut(String accountName, String accountPassword)
     {
         System.out.println("You have logged out.");
     }
