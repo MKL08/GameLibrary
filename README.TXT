@@ -8,7 +8,7 @@ PROJECT TITLE:Game Library
 PURPOSE OF PROJECT: Programming 1 (LIA)
 VERSION or DATE: v.1 
 HOW TO START THIS PROJECT:
-AUTHORS:
+AUTHORS: Wing Sze Kwok and Mai Khanh Luong
 USER INSTRUCTIONS:
 
 This is the first commit
