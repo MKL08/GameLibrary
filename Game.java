@@ -30,7 +30,7 @@ public class Game
     public void printGameName(String gameName)
     {
         // put your code here
-        System.out.println();
+        System.out.println(gameName);
     }
     
     public void printGameCreator(String gameCreator)
@@ -40,6 +40,6 @@ public class Game
     
     public void printGameAgeRating()
     {
-      System.out.println();
+      System.out.println(AgeRating.EVERYONE);
     }
 }

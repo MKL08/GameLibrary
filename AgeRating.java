@@ -10,5 +10,5 @@ public enum AgeRating
     EVERYONE, 
     TEEN,
     MATURE,
-    ADULTS_ONLY
+    ADULTS_ONLY;
 }

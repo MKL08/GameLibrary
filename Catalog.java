@@ -41,6 +41,12 @@ public class Catalog
     public void printListOfGames()
     {
         // put your code here
+        games.add("Genshin Impact");
+        games.add("Mario");
+        games.add("Zelda");
+        games.add("Minecraft");
+        games.add("Super Granny");
+        games.add("Sudoku");
         for ( String game : games)
         {
             System.out.println(game);
