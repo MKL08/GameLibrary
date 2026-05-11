@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Write a description of class Menu here.
  *
@@ -31,11 +31,12 @@ public class Menu
     public void printWebsiteName()
     {
         // put your code here
-        System.out.println("Game Library");
+        System.out.println("Game Library.com");
     }
     
     public void getCatalog()
     {
-        
+        Catalog ca = new Catalog();
+        System.out.println("Welcome to the Menu!");
     }
 }
