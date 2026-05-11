@@ -41,25 +41,28 @@ public class Catalog
     public void printListOfGames()
     {
         // put your code here
-        games.add("Genshin Impact");
-        games.add("Mario");
-        games.add("Zelda");
-        games.add("Minecraft");
-        games.add("Super Granny");
-        games.add("Sudoku");
+        games.add(new String("Genshin Impact"));
+        games.add(new String("Mario"));
+        games.add(new String("Zelda"));
+        games.add(new String("Minecraft"));
+        games.add(new String("Super Granny"));
+        games.add(new String("Sudoku"));
         for ( String game : games)
         {
             System.out.println(game);
         }
     }
-
+    
     public void printGameSearched(String input)
-    {
-        if (games.contains(input))
+    {  
+        for (String game : games){
+        if (game.equals(input))
         {
             System.out.println(game);
-        } else {
-            System.out.println("Sorry, the game you're trying to find is not available in our library.");
+            return;
         }
+        }
+        System.out.println("Sorry, the game you're trying to find is not available in our library.");
+
     }
 }
