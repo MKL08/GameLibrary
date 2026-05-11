@@ -40,7 +40,6 @@ public class Game
         System.out.println("Available games :" + Catalog.games);
         System.out.println("Enter game name : ");
         String game = scanner.nextLine();
-        
         switch(game){
             case "Minecraft":
                 System.out.println("Creator : Markus Persson (Mojang)");
@@ -66,7 +65,31 @@ public class Game
     
     public void printGameAgeRating()
     {
-      System.out.println(AgeRating.EVERYONE);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Available games for you :" + Catalog.games);
+        System.out.println("Enter game name : ");
+        String game = scanner.nextLine();
+        switch(game){
+            case "Minecraft":
+                System.out.println(AgeRating.EVERYONE);
+                break;
+            case "Genshin Impact":
+                System.out.println(AgeRating.TEEN);
+                break;
+            case "Mario":
+                System.out.println(AgeRating.EVERYONE);
+                break;
+            case "Zelda":
+                System.out.println(AgeRating.EVERYONE);
+                break;
+            case "Super Granny":
+                System.out.println(AgeRating.TEEN);
+                break;
+            case "Sudoku":
+                System.out.println(AgeRating.EVERYONE);
+                break;
+        }
+        scanner.close();
     }
 
 }
