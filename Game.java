@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 /**
  * Write a description of class Game here.
  *
@@ -33,9 +34,34 @@ public class Game
         System.out.println(gameName);
     }
     
-    public void printGameCreator(String gameCreator)
+    public void printGameCreator()
     {
-        System.out.println("The creator(s) of the game is :" + gameCreator);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Available games :" + Catalog.games);
+        System.out.println("Enter game name : ");
+        String game = scanner.nextLine();
+        
+        switch(game){
+            case "Minecraft":
+                System.out.println("Creator : Markus Persson (Mojang)");
+                break;
+            case "Genshin Impact":
+                System.out.println("Creators : Cai Haoyu, Liu Wei, and Luo Yuhao (miHoYo)");
+                break;
+            case "Mario":
+                System.out.println("Creator : Shigeru Miyamoto (Nintendo)");
+                break;
+            case "Zelda":
+                System.out.println("Creator : Shigeru Miyamoto (Nintentdo)");
+                break;
+            case "Super Granny":
+                System.out.println("Creator :Dennis Vukanovic (Sandlot Games) ");
+                break;
+            case "Sudoku":
+                System.out.println("Creator : Maki Kaji");
+                break;
+        }
+        scanner.close();
     }
     
     public void printGameAgeRating()

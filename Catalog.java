@@ -8,8 +8,8 @@ import java.util.ArrayList;
 public class Catalog
 {
     // instance variables - replace the example below with your own
-    private ArrayList<String> games;
-    private Game game;
+    public static ArrayList<String> games;
+    private static Game game;
     private String searchEngine;
     /**
      * Constructor for objects of class Catalog
@@ -20,6 +20,12 @@ public class Catalog
         games = new ArrayList<String>();
         game = new Game();
         searchEngine = new String();
+        games.add(new String("Genshin Impact"));
+        games.add(new String("Mario"));
+        games.add(new String("Zelda"));
+        games.add(new String("Minecraft"));
+        games.add(new String("Super Granny"));
+        games.add(new String("Sudoku"));
     }
 
     public void addGame(String gameName)
@@ -41,12 +47,6 @@ public class Catalog
     public void printListOfGames()
     {
         // put your code here
-        games.add(new String("Genshin Impact"));
-        games.add(new String("Mario"));
-        games.add(new String("Zelda"));
-        games.add(new String("Minecraft"));
-        games.add(new String("Super Granny"));
-        games.add(new String("Sudoku"));
         for ( String game : games)
         {
             System.out.println(game);

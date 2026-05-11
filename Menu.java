@@ -36,7 +36,6 @@ public class Menu
     
     public void getCatalog()
     {
-        Catalog ca = new Catalog();
         System.out.println("Welcome to the Menu!");
     }
 }
