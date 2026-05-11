@@ -31,9 +31,9 @@ public class Game
     public void printGameName(String gameName)
     {
         // put your code here
-        System.out.println(gameName);
+        
     }
-    
+
     public void printGameCreator()
     {
         Scanner scanner = new Scanner(System.in);

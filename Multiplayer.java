@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 /**
  * Write a description of class Multiplayer here.
@@ -26,7 +27,21 @@ public class Multiplayer extends Game
      */
     public void printGameDescription()
     {
-        // put your code here
-        System.out.println();
+     Scanner scanner = new Scanner(System.in);
+     System.out.println("Available games :" + Catalog.multiGames);
+     System.out.println("Enter game name : ");
+     String game = scanner.nextLine();
+        switch(game){
+            case "Minecraft":
+                System.out.println("A sandbox game with no set goals, allowing players to explore, gather resources, craft items, and build structures in a procedurally generated 3D world made of blocks.");
+                break;
+            case "Genshin Impact":
+                System.out.println("A free-to-play, open-world action RPG developed by HoYovertse that allows players to explore the vast fantasy world of Teyvat");
+                break;
+            case "Mario":
+                System.out.println("Super Mario is a seminal side-scrolling platform video game series starring a mustachioed plumber named Mario.");
+                break;
+     }
+     scanner.close();
     }
 }
