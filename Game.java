@@ -15,11 +15,11 @@ public class Game
     /**
      * Constructor for objects of class Game
      */
-    public Game()
+    public Game(String gameName, String gameCreator)
     {
         // initialise instance variables
-        gameName = new String();
-        gameCreator = new String();
+        this.gameName = gameName;
+        this.gameCreator = gameCreator;
     }
 
     /**
@@ -28,10 +28,10 @@ public class Game
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public void printGameName(String gameName)
+    public String toString()
     {
         // put your code here
-        
+        return "Game : " + gameName;
     }
 
     public void printGameCreator()

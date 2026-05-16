@@ -22,7 +22,7 @@ public class Catalog
         singleGames = new ArrayList<String>();
         multiGames = new ArrayList<String> ();
         games = new ArrayList<String>();
-        game = new Game();
+        //game = new Game();
         searchEngine = new String();
         
         games.add(new String("Genshin Impact"));
