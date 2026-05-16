@@ -8,7 +8,7 @@
 public class MainMenu
 {
     // instance variables - replace the example below with your own
-    
+
     /**
      * Constructor for objects of class MainMenu
      */
@@ -27,18 +27,18 @@ public class MainMenu
     {
         // put your code here
     }
-    
-    private static void main(String[] args)
+
+    public static void main(String[] args)
     {
         System.out.println("Game Library.com");
-        
+
         Game game1 = new Game("Genshin Impact", "HoYoverse");
         Game game2 = new Game("Mario", "Nintendo");
         Game game3 = new Game("Zelda", "Nintendo");
         Game game4 = new Game("Minecraft", "Mojang");
         Game game5 = new Game("Super Granny", "Sandlot Games");
         Game game6 = new Game("Sudoku", "Unknown");
-        
+
         System.out.println(game1);
         System.out.println(game2);
         System.out.println(game3);

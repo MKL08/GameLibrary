@@ -37,7 +37,7 @@ public class Game
     public String toString()
     {
         // put your code here
-        return "Game : " + gameName + "by : " + gameCreator;
+        return "Game : " + gameName;
     }
 
     public void printGameCreator()
