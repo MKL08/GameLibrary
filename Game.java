@@ -21,6 +21,12 @@ public class Game
         this.gameName = gameName;
         this.gameCreator = gameCreator;
     }
+    
+    public Game()
+    {
+        gameName = new String();
+        gameCreator = new String();
+    }
 
     /**
      * An example of a method - replace this comment with your own
@@ -31,7 +37,7 @@ public class Game
     public String toString()
     {
         // put your code here
-        return "Game : " + gameName;
+        return "Game : " + gameName + "by : " + gameCreator;
     }
 
     public void printGameCreator()
